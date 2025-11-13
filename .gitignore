@@ -2,3 +2,5 @@
 appengine-generated/
 out_data/data/Subject01/@rawsub-oLNpHd_ses-PeriOp_task-MoveL_acq-MedOn_run-2_meg_high/*.bst
 out_data/data/Subject01/@rawsub-oLNpHd_ses-PeriOp_task-MoveL_acq-MedOn_run-2_meg_notch/*.bst
+out_data/data/Subject01/@rawsub-oLNpHd_ses-PeriOp_task-MoveL_acq-MedOn_run-2_meg_high/*.bst
+out_data/data/Subject01/@rawsub-oLNpHd_ses-PeriOp_task-MoveL_acq-MedOn_run-2_meg_notch/*.bst
