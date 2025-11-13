@@ -36,6 +36,9 @@ win_overlap = 0; % percentage
 %% START BRAINSTORM
 disp('== Start Brainstorm defaults');
 
+% Start Brainstorm (no GUI)
+brainstorm nogui
+
 % Set Brainstorm database directory
 bst_set('BrainstormDbDir',BrainstormDbDir) 
 % Reset colormaps
