@@ -36,6 +36,9 @@ win_overlap = 0; % percentage
 %% START BRAINSTORM
 disp('== Start Brainstorm defaults');
 
+% Start Brainstorm (no GUI)
+brainstorm nogui
+
 % Set Brainstorm database directory
 bst_set('BrainstormDbDir',BrainstormDbDir) 
 % Reset colormaps
@@ -108,7 +111,7 @@ sFilesNotch = bst_process('CallProcess', 'process_notch', ...
     'sensortypes', 'MEG, EEG', ...
     'read_all', 0); 
 
-disp('3) Create snapshot PSD on sensors');
+%disp('3) Create snapshot PSD on sensors');
 
 
 %% ==== 4)  High pass filter =====================
