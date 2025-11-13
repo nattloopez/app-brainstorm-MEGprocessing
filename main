@@ -6,6 +6,18 @@
 #SBATCH --time=00:30:00          # total run time limit (HH:MM:SS)
 
 
-# Parse config.json for input parameters (we are pulling the "fif")
-fif=$(jq -r .fif config.json)
-./app.py $fif
+mkdir -p out_dir
+mkdir -p out_data
+mkdir -p home
+
+ # 1) Run code local - Matlab MCR
+# /home/natalia/Documents/SOFTWARE/brainstorm3/bin/R2020a/brainstorm3.command /home/natalia/app-brainstorm-MEGprocessing main2.m local
+
+# 2) Run code singularity
+# singularity run -e --bind `pwd`/home:/home/$USER docker://brainlife/brainstorm:3_210303 main2.m local
+
+
+
+
+# Run code local - Matlab interpreter
+#/Applications/MATLAB_R2022a.app/bin/matlab -nodisplay -r main
