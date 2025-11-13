@@ -23,5 +23,15 @@ It currently:**
 + Artifact detection
 
 
+# main
+**Contains:**
+
++ Allowance of computing resources 
++ Commands to make directories 
++ Execution (locally or with container)
+
+**Next additions**:
++ Test app on Brainlife 
++ Incorporate Docker 
 
 
