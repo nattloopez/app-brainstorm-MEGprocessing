@@ -21,7 +21,7 @@ mcc -m -R -nodisplay -d compiled \\
     -a /N/u/brlife/brainstorm/brainstorm3 \\
     -a /N/soft/mason/SPM/spm8 \\
     -a /N/u/brlife/git/jsonlab \\
-    main.m
+    main
 
 exit
 END
