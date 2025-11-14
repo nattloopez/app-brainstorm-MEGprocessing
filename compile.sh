@@ -1,5 +1,5 @@
 #!/bin/bash
-module load matlab/2020a
+module load matlab/R2023a
 
 mkdir -p compiled
 
