@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --nodes=3                # node count
+#SBATCH --nodes=1                # node count
 #SBATCH --ntasks=1               # total number of tasks across all nodes
 #SBATCH --cpus-per-task=1        # cpu-cores per task (>1 if multi-threaded tasks)
 #SBATCH --mem-per-cpu=2G         # memory per cpu-core (4G is default)
@@ -11,13 +11,10 @@ mkdir -p out_data
 mkdir -p home
 
 # 1) Run code local - Matlab MCR
-# /home/natalia/Documents/SOFTWARE/brainstorm3/bin/R2020a/brainstorm3.command /home/natalia/app-brainstorm-MEGprocessing main2.m local
+/usr/local/brainstorm3/bin/R2023a/brainstorm3.command /home/natalia/app-brainstorm-MEGprocessing main.m local
 
 # 2) Run code singularity
 # singularity run -e --bind `pwd`/home:/home/$USER docker://nicomm77/neurodockernmm:v1 main.m local
 
-
-
-
-# Run code local - Matlab interpreter
+# 3) Run code local - Matlab interpreter
 #/Applications/MATLAB_R2022a.app/bin/matlab -nodisplay -r main
