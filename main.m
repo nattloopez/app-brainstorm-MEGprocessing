@@ -5,7 +5,7 @@ disp('0. My script has started');
 %% Key paths
 % Directory to store brainstorm database
 BrainstormDbDir = [pwd, '/brainstorm_db/']; % Full path
-ReportsDir = '/home/natalia/Downloads/Natalia_brainocker/reports/';
+ReportsDir = '/home/natalia/app-brainstorm-MEGprocessing/out_dir/';
 DataDir    = 'out_data/';
 
 %% Parameters
