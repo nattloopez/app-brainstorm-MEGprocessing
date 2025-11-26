@@ -11,10 +11,13 @@ mkdir -p out_data
 mkdir -p home
 
 # 1) Run code local - Matlab MCR
-/usr/local/brainstorm3/bin/R2023a/brainstorm3.command /home/natalia/app-brainstorm-MEGprocessing main.m local
+# /usr/local/brainstorm3/bin/R2023a/brainstorm3.command /home/natalia/app-brainstorm-MEGprocessing main.m local
 
 # 2) Run code singularity
 # singularity run -e --bind `pwd`/home:/home/$USER docker://nicomm77/neurodockernmm:v1 main.m local
 
 # 3) Run code local - Matlab interpreter
 #/Applications/MATLAB_R2022a.app/bin/matlab -nodisplay -r main
+
+# 4) Run code singularity with sif uploaded
+singularity run -e --bind `pwd`/home:/home/$USER /network/iss/brainlife/users/brlife/containers/neurodockernmm_v1.sif main.m local
