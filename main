@@ -20,4 +20,5 @@ mkdir -p home
 #/Applications/MATLAB_R2022a.app/bin/matlab -nodisplay -r main
 
 # 4) Run code singularity with sif uploaded
-singularity run -e --bind `pwd`/home:/home/$USER /network/iss/brainlife/users/brlife/containers/neurodockernmm_v1.sif main.m local
+singularity exec --bind `pwd`/home:/home/$USER /network/iss/brainlife/users/brlife/containers/neurodockernmm_v1.sif /opt/brainstorm/bin/R2023a/brainstorm3.command main.m local
+
