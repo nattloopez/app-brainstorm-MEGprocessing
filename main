@@ -10,6 +10,10 @@ mkdir -p out_dir
 mkdir -p out_data
 mkdir -p home
 
+# Add permissions to read main.m
+chmod a+r main.m
+chmod a+x main.m 
+
 # 1) Run code local - Matlab MCR
 # /usr/local/brainstorm3/bin/R2023a/brainstorm3.command /home/natalia/app-brainstorm-MEGprocessing main.m local
 
