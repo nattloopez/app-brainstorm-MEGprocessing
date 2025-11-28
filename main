@@ -24,7 +24,6 @@ chmod a+x main.m
 #/Applications/MATLAB_R2022a.app/bin/matlab -nodisplay -r main
 
 # 4) Run code singularity with sif uploaded
-module load singularity/2.6.1
-singularity exec --cleanenv --no-home --bind `pwd`/home:/home/$USER /network/iss/brainlife/users/brlife/containers/neurodockernmm_v1.sif /opt/brainstorm/bin/R2023a/brainstorm3.command /opt/matlab_runtime/R2023a
+singularity exec --bind `pwd`/home:/home/$USER /network/iss/brainlife/users/brlife/containers/neurodockernmm_v1.sif /opt/brainstorm/bin/R2023a/brainstorm3.command /opt/matlab_runtime/R2023a
  main.m local
 
